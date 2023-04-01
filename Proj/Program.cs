@@ -11,14 +11,14 @@
         {
             a[i] = Console.ReadLine();
         }
-        b = new string[n];
+        b = new string[n+1];
         for (int i = 0; i < n; i++)
         {
             if (a[i].Length <= 3)
             {
-                b[b.Length+1] = a[i];
+                b[i] = a[i];
             }
         }
-        Console.WriteLine(b);
+        Console.WriteLine(String.Join(" ", b));
     }
 }
